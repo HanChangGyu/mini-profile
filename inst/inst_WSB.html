@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나의 블로그 프로필</title>
+    <style>
+      /* 1. 기본 스타일 초기화 */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: #fbfbfb; /* 전체 배경색 */
+        font-family: "Pretendard", sans-serif;
+      }
+
+      /* 2. 전체를 중앙에 고정하는 바구니 */
+      .wrapper {
+        max-width: 1000px; /* 콘텐츠의 최대 너비 고정 */
+        margin: 0 auto; /* 화면 중앙 정렬 */
+        position: relative; /* 자식 요소(프로필)의 기준점 */
+        min-height: 100vh; /* 최소 높이를 화면 높이만큼 확보 */
+        background-color: white; /* 본문 영역 구분용 */
+      }
+
+      /* 3. 배너 영역 */
+      .banner {
+        width: 100%;
+        height: 350px;
+        background-color: #e0e4d6; /* 연녹색 배너 */
+      }
+
+      /* 4. 프로필 세트 (이미지 + 이름) */
+      .profile-section {
+        position: absolute;
+        top: 280px; /* 배너 상단에서부터 280px 지점에 배치 (살짝 걸치게) */
+        left: 50px; /* 왼쪽에서 50px 여백 */
+        display: flex; /* 이미지와 이름을 가로로 배치 */
+        align-items: flex-end; /* 이미지 바닥과 이름 바닥 정렬 */
+        gap: 20px; /* 이미지와 이름 사이 간격 */
+      }
+
+      /* 프로필 이미지 스타일 */
+      .profile-img {
+        width: 160px;
+        height: 160px;
+        background-color: #fff;
+        border: 6px solid white; /* 흰색 테두리로 블로그 느낌 */
+        border-radius: 12px; /* 살짝 둥근 네모 */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
+        object-fit: cover;
+      }
+
+      /* 이름 스타일 */
+      .profile-name {
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+        padding-bottom: 15px; /* 바닥 선에서 살짝 띄우기 */
+      }
+
+      /* 5. 메인 콘텐츠 영역 */
+      .main-content {
+        padding: 120px 50px 50px; /* 프로필 박스가 내려온 만큼 위쪽 여백 확보 */
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="banner"></div>
+
+      <div class="profile-section">
+        <img
+          class="profile-img"
+          src="https://i.pinimg.com/736x/03/1c/ae/031cae3c6a96574cdb622b84bf4226ac.jpg"
+          alt="프로필"
+        />
+        <div class="profile-name">원 세 빈</div>
+      </div>
+
+      <div class="main-content">
+        <h2>풀스택 개발자!!</h2>
+        <p>MBTI: INFP</p>
+        <p>나이: 02년생</p>
+        <p>
+          여행가는 걸 좋아하고 취미는 산책, 영화보기, 다이어리쓰기 입니다!<br /><br />
+          현재는 양주시에 거주 중입니다~~
+        </p>
+        <p>좋아하는 캐릭터는 치이카와 입니다~! 햄스터에요</p>
+        <p>열심히 하겠습니다~~</p>
+      </div>
+    </div>
+  </body>
+</html>
