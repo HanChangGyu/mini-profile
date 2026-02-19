@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>상세 프로필 페이지</title>
+    <style>
+      /* 기본 색상 및 변수 설정 */
+      :root {
+        --배경색: #121212;
+        --카드색: #1e1e1e;
+        --글자색: #ffffff;
+        --강조색: #667eea;
+      }
+
+      /* 기본 스타일 초기화 */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      body {
+        background-color: var(--배경색);
+        color: var(--글자색);
+        display: flex;
+        justify-content: center;
+        padding: 50px 20px;
+      }
+
+      /* 전체 레이아웃 틀 */
+      .container {
+        width: 100%;
+        max-width: 800px;
+      }
+
+      /* 상단 제목 및 버튼 바 */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+
+      .back-link {
+        color: #888;
+        text-decoration: none;
+        border: 1px solid #444;
+        padding: 8px 16px;
+        border-radius: 8px;
+      }
+
+      /* 카드 배치를 위한 그리드 설정 */
+      .grid-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      /* 개별 카드 스타일 */
+      .card {
+        background-color: var(--카드색);
+        padding: 30px;
+        border-radius: 15px;
+        border: 1px solid #333;
+      }
+
+      /* 가로로 꽉 차는 카드 설정 */
+      .wide-card {
+        grid-column: span 2;
+      }
+
+      /* 강조 키워드 텍스트 */
+      .tag {
+        color: var(--강조색);
+        font-size: 13px;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 15px;
+      }
+
+      /* 카드 내부 본문 텍스트 */
+      .card p {
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      /* 문장 내 강조 포인트 */
+      .point {
+        color: var(--강조색);
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>나의 소개</h1>
+        <!-- 메인 페이지 연결 링크 -->
+        <a href="../index.html" class="back-link">메인으로 돌아가기</a>
+      </header>
+
+      <main class="grid-layout">
+        <div class="card">
+          <span class="tag">취미</span>
+          <p>
+            요즘은 <span class="point">런닝</span>을 하며 체력을 기르고
+            있습니다.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="tag">음식</span>
+          <p>
+            <span class="point">고기</span> 요리를 좋아하고 해산물은 먹지
+            않습니다.
+          </p>
+        </div>
+
+        <div class="card wide-card">
+          <span class="tag">비전</span>
+          <p>
+            최신 정보를 기반으로 한
+            <span class="point">기업 분석 사이트</span>와 실제 현장에서 필요한
+            <span class="point">전기 작업 웹</span>을 만들고 싶습니다.
+          </p>
+        </div>
+
+        <div class="card wide-card">
+          <span class="tag">목표</span>
+          <p>
+            <span class="point">1인 창업</span>을 목표로 깊이 있는 개발 지식을
+            쌓기 위해 참여했습니다.
+          </p>
+        </div>
+
+        <div class="card wide-card" style="border-color: var(--강조색)">
+          <span class="tag">다짐</span>
+          <p style="font-size: 22px; font-weight: bold">"열심히 하겠습니다!"</p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
