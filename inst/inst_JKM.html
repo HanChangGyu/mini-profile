@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JKM | Portfolio</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      body {
+        background-color: #f4f4f4;
+        margin: 0;
+      } /* 배경색을 연하게 깔아 박스를 강조 */
+
+      /* 상단 네비게이션 바 */
+      nav {
+        background: #fff;
+        padding: 15px 50px;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .profile-header {
+        background: linear-gradient(
+          135deg,
+          #2c3e50,
+          #000000
+        ); /* 조금 더 고급스러운 블랙 그라데이션 */
+        color: white;
+        padding: 60px 20px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .info-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        text-align: left;
+      }
+
+      .info-box {
+        background: #fff;
+        padding: 25px;
+        border-radius: 12px;
+        border-left: 5px solid black;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      /* 다짐 문구와 버튼을 담은 박스 */
+      .closing-section {
+        margin-top: 40px;
+        padding: 40px;
+        background: #fff;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      }
+
+      .skill-tag {
+        display: inline-block;
+        background: #333;
+        color: white;
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        margin: 3px;
+      }
+
+      /* 진짜 하단 푸터 */
+      .main-footer {
+        margin-top: 60px;
+        padding: 30px;
+        background: #222;
+        color: #888;
+        text-align: center;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 600px) {
+        .info-section {
+          grid-template-columns: 1fr;
+        }
+        nav {
+          padding: 15px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div style="font-weight: bold">DEV_JKM</div>
+      <div>
+        <a
+          href="../index.html"
+          style="text-decoration: none; color: #333; font-size: 0.9rem"
+          >Home</a
+        >
+      </div>
+    </nav>
+
+    <div
+      class="container"
+      style="max-width: 900px; margin: 40px auto; padding: 0 20px"
+    >
+      <header class="profile-header">
+        <h1>Welcome to Full Stack Dev's page</h1>
+        <p>깔끔한 코드를 중시하는 풀스택 개발자 전강민입니다.</p>
+        <div style="margin-top: 20px">
+          <a
+            href="https://github.com/DevGangMin"
+            target="_blank"
+            class="github-link"
+            style="
+              color: white;
+              border: 1px solid white;
+              padding: 8px 20px;
+              border-radius: 5px;
+              text-decoration: none;
+            "
+            >GitHub 방문하기</a
+          >
+        </div>
+      </header>
+
+      <div class="info-section">
+        <div class="info-box">
+          <h3>About Me</h3>
+          <p>
+            안녕하세요! 미래를 향해 달리는 개발자
+            <strong>전강민</strong>입니다.<br />코드잇 스프린터로서 최선을 다해
+            열심히 달리겠습니다.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h3>My Skills</h3>
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">Git/GitHub</span>
+          <span class="skill-tag">Communication</span>
+        </div>
+
+        <div class="info-box">
+          <h3>Contributions</h3>
+          <p style="margin: 5px 0">• 메인 페이지 레이아웃 설계</p>
+          <p style="margin: 5px 0">• 공통 CSS 가이드 작성</p>
+          <p style="margin: 5px 0">• 페이지 연결 구조화</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Interests</h3>
+          <p>#깨끗한코드 #모던웹디자인 #팀워크</p>
+        </div>
+      </div>
+
+      <section class="closing-section">
+        <h3 style="margin-bottom: 15px">
+          "지치지 않고 꾸준히 나아가는 개발자가 되겠습니다."
+        </h3>
+        <p style="color: #666">
+          함께 작업해주신 6명의 팀원분들 모두 감사합니다!
+        </p>
+        <div style="margin-top: 30px">
+          <a
+            href="../index.html"
+            class="btn"
+            style="
+              background: black;
+              color: white;
+              padding: 12px 25px;
+              border-radius: 8px;
+              text-decoration: none;
+              font-weight: bold;
+            "
+          >
+            ⬅ 메인 화면으로 돌아가기
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <footer class="main-footer">
+      <p>© 2026 Team Project. This Page is Designed by JKM</p>
+      <p style="font-size: 0.7rem">
+        본 페이지는 HTML과 CSS만으로 제작되었습니다.
+      </p>
+    </footer>
+  </body>
+</html>
