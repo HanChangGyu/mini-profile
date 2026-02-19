@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Jongchan </title>
+    <style>
+        body { 
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif; 
+            background-color: var(--bg-color); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0; 
+        }
+        .card { 
+            background: white; 
+            width: 100%;
+            max-width: 450px; 
+            padding: 40px; 
+            border-radius: 12px; 
+            box-shadow: 12px 12px 0px #333; 
+            border: 3px solid #333; 
+            position: relative;
+        }
+        .header { 
+            border-bottom: 4px solid var(--point-color); 
+            padding-bottom: 20px; 
+            margin-bottom: 25px; 
+        }
+        h1 { margin: 10px 0 5px 0; font-size: 1.8rem; color: #222; }
+        .mbti-tag { 
+            background: var(--point-color); 
+            color: rgb(0, 89, 255); 
+            padding: 4px 10px; 
+            border-radius: 4px; 
+            font-size: 0.9rem; 
+            font-weight: bold;
+        }
+        .sub-text { color: #666; font-size: 1rem; margin: 0; }
+        
+        .info-list { list-style: none; padding: 0; margin: 0; }
+        .info-item { margin-bottom: 15px; }
+        .label { 
+            display: block; 
+            font-weight: bold; 
+            color: var(--point-color); 
+            font-size: 0.85rem; 
+            margin-bottom: 3px;
+            text-transform: uppercase;
+        }
+        .value { font-size: 1.1rem; color: #333; }
+        .value a { color: #007bff; text-decoration: none; border-bottom: 1px solid #007bff; }
+        .value a:hover { background: #f0f7ff; }
+
+        .quote { 
+            background: #f8f9fa; 
+            padding: 15px; 
+            border-left: 5px solid #ccc; 
+            font-style: italic; 
+            margin-top: 25px;
+            color: #444;
+        }
+
+        .back-btn { 
+            margin-top: 30px; 
+            display: block; 
+            text-align: center;
+            padding: 12px; 
+            background: #333; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .back-btn:hover { background: #555; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="header">
+        <h1>Jongchan Kim</h1>
+        <p class="sub-text"> 코드잇 풀스택 12기 수강생</p>
+    </div>
+
+    <div class="info-list">
+        <div class="info-item">
+            <span class="label">MBTI</span>
+            <span class="value">INFJ</span>
+        </div>
+        <div class="info-item">
+            <span class="label">취미 </span>
+            <span class="value">웹툰감상 </span>
+        </div>
+        <div class="info-item">
+            <span class="label">Github </span>
+            <span class="value"><a href="https://github.com/zomjjang0313" target="_blank"> @zomjjang0313</a></span>
+        </div>
+        <div class="info-item">
+            <span class="label">다짐 한 마디</span>
+        </div>
+    </div>
+
+    <div class="quote">
+        "기본에 충실하자!"
+    </div>
+
+    <a href="../index.html" class="back-btn">← Home으로 돌아가기</a>
+</div>
+
+</body>
+</html>
