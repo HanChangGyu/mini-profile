@@ -1,0 +1,40 @@
+.member-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  position: relative;
+  cursor: pointer;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.full-card-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.github-link {
+  display: inline-block;
+  color: #1abc9c;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 15px;
+
+  position: relative;
+  z-index: 10;
+}
+
+.github-link:hover {
+  text-decoration: underline;
+}
