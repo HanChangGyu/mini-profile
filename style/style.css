@@ -107,3 +107,10 @@ ul li::before {
   bottom: 0;
   z-index: 1;
 }
+
+.main-footer {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+  font-size: 0.8rem;
+}
