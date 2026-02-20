@@ -4,6 +4,187 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 16px; /* rem 단위의 기준이 됨 */
+      }
+
+      body {
+        font-family:
+          Pretendard,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          sans-serif;
+        line-height: 1.5;
+        color: #111827;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* 리스트 기본 불릿/숫자 제거 (ul, ol 공통) */
+      ul,
+      ol {
+        list-style: none;
+      }
+
+      /* 링크 밑줄 제거, 부모 색상 상속 (스타일은 style.css에서 개별 지정) */
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* 개인페이지 스타일 */
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(145deg, #2d23a9, #dc4b9a);
+        width: 100%;
+        min-height: 100vh;
+      }
+      .wrap {
+        width: 1000px;
+        height: 600px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 5px 0px #000;
+      }
+      .nav-wrap {
+        width: 100%;
+        height: 30px;
+        background-color: #e7e7e7;
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+      }
+      .nav-wrap > span {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        margin: 0 3px;
+        cursor: pointer;
+      }
+      #red {
+        background-color: #fe5f57;
+      }
+      #yellow {
+        background-color: #f6bc35;
+      }
+      #green {
+        background-color: #30c848;
+      }
+
+      .btn-wrap {
+        margin-left: 20px;
+      }
+
+      .btn-wrap > a,
+      .btn-wrap > span {
+        color: #5e5e5e;
+        font-weight: 800;
+        padding: 0 5px;
+      }
+
+      .btn-wrap > span:hover {
+        cursor: not-allowed;
+      }
+
+      .btn-wrap > a:hover {
+        color: #000;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        height: calc(100% - 30px);
+        justify-content: space-evenly;
+      }
+
+      .aside-content {
+        width: 400px;
+        height: 530px;
+        border-radius: 10px;
+        background-color: #fff3b3;
+        text-align: center;
+        color: #674a0d;
+        box-shadow: 0 0 5px 0 inset;
+      }
+
+      .aside-content > img {
+        mix-blend-mode: multiply;
+      }
+
+      .main-content {
+        height: calc(100% - 30px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+
+      .scr-content > h2 {
+        color: #000;
+        border-bottom: 1px solid #000;
+        padding: 0 5px;
+      }
+
+      .scr-content > p {
+        padding: 0 5px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="wrap">
+      <nav class="nav-wrap">
+        <span id="red"></span>
+        <span id="yellow"></span>
+        <span id="green"></span>
+
+        <div class="btn-wrap">
+          <a href="/index.html">&lt;</a>
+          <span>&gt;</span>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="aside-content">
+          <img
+            src="https://i.namu.wiki/i/WiTr1BQDnj5EGvR78he8YoJa1BF3HBBSsDsNrfOL9jzECeYbbPwTk4eWfJokZXUih-Fz-Va4v7PuyQ4ccEicGw.webp"
+            alt=""
+          />
+          <h1>김나연</h1>
+          <p>성실하게 꾸준하게!</p>
+        </div>
+        <div class="main-content">
+          <div class="scr-content">
+            <h2>MBTI</h2>
+            <p>INFJ</p>
+          </div>
+          <div class="scr-content">
+            <h2>취미</h2>
+            <p>헬스 (요즘 추워서 밖에 나가기가 싫어요 ..)</p>
+            <p>게임</p>
+          </div>
+          <div class="scr-content">
+            <h2>목표</h2>
+            <p>
+              풀스택 과정을 통해 프론트, 백 두 업무에 익숙해져서 협업에 지장
+              없게 하기!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
