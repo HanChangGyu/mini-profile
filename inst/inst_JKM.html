@@ -19,6 +19,7 @@
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       }
 
+      /* 클래스 형태로 만들어서 사용 */
       .profile-header {
         background: linear-gradient(135deg, #2c3e50, #000000);
         color: white;
@@ -70,7 +71,7 @@
         text-align: center;
         font-size: 0.9rem;
       }
-
+      /* 반응형 디자인 위해 media query 사용 */
       @media (max-width: 600px) {
         .info-section {
           grid-template-columns: 1fr;
@@ -99,7 +100,10 @@
     >
       <header class="profile-header">
         <h1>Welcome to Full Stack Dev's page</h1>
-        <p>깔끔한 코드를 중시하는 풀스택 개발자 전강민입니다.</p>
+        <!-- strong은 사실 딱히 이유는 없지만 배운것도 복습할 겸 이름 강조하고 싶어서 사용 -->
+        <p>
+          깔끔한 코드를 중시하는 풀스택 개발자 <strong>전강민</strong>입니다.
+        </p>
         <div style="margin-top: 20px">
           <a
             href="https://github.com/DevGangMin"
@@ -112,7 +116,9 @@
               border-radius: 5px;
               text-decoration: none;
             "
-            >GitHub 방문하기</a
+          >
+            <!-- 그냥 i로 스크린리더는 인식하지 못하되 강조는 하기 위해서 사용 -->
+            <i>GitHub 방문하기</i></a
           >
         </div>
       </header>
@@ -137,6 +143,7 @@
 
         <div class="info-box">
           <h3>Contributions</h3>
+          <!-- ul 쓰면 왼쪽 공백 생기므로 p 사용 -->
           <p style="margin: 5px 0">• 메인 페이지 레이아웃 설계</p>
           <p style="margin: 5px 0">• 공통 CSS 가이드 작성</p>
           <p style="margin: 5px 0">• 페이지 연결 구조화</p>
